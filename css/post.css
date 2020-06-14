@@ -1,0 +1,13 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("component/settings.css");
+@import url("component/navbar.css");
+@import url("component/header.css");
+@import url("component/heading.css");
+@import url("component/button.css");
+@import url("component/footer.css");
+@import url("component/article_content.css");
+
+header{
+  background-image: url("../images/gandhi_back.jpg");
+  height: 80vh;
+}

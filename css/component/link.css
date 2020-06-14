@@ -1,0 +1,34 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+
+.link:link,
+.link:visited,
+.tag-link:link,
+.tag-link:visited{
+  text-decoration: none;
+  transition: background-color 0.2;
+}
+
+.link:link,
+.link:visited{
+  color: var(--vds-color-cerulean-darker);
+  font-weight: var(--vds-font-weight-semibold);
+  transition: background-color 0.2;
+}
+
+.tag-link:link,
+.tag-link:visited{
+  display: inline-block;
+  background-color: var(--vds-color-cerulean);
+  text-decoration: none;
+  color: var(--vds-color-cerulean-lightest);
+  border-radius: 15px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  font-size: var(--vds-text-font-size-xs);
+}
+
+.link:hover{
+  color: var(--vds-color-cerulean-dark);
+}
+.tag-link:hover{
+  background-color: var(--vds-color-cerulean-dark);
+}

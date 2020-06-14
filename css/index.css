@@ -1,0 +1,89 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("component/settings.css");
+@import url("component/navbar.css");
+@import url("component/header.css");
+@import url("component/heading.css");
+@import url("component/button.css");
+@import url("component/card.css");
+@import url("component/footer.css");
+
+/**************Header**************/
+header{
+  background-image: linear-gradient(to bottom, rgb(249, 249, 250, 1), rgba(245, 252, 254, 0.3)),
+                    url("../images/back.jpg");
+}
+
+/**************Posts Section**************/
+.posts{
+  background-color: var(--vds-color-cerulean-lightest);
+}
+
+.posts-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.long-card{
+  width: 67%;
+}
+
+.short-card{
+  width: 30%;
+}
+
+/**************Media Query**************/
+
+@media (max-width: 768px){
+  /*Settings*/
+  .row{
+    max-width: 95%;
+  }
+
+  /*Cards*/
+  .long-card{
+    flex-direction: column;
+    width: 47%;
+  }
+
+  .long-card-img,
+  .long-card-body{
+    width: 100%;
+    height: 60%;
+  }
+
+  .card-preview{
+    display: none;
+  }
+
+  .short-card{
+    width: 47%;
+  }
+
+  .short-card-body{
+    top: 50%;
+  }
+}
+
+@media (max-width: 426px){
+  .long-card,
+  .short-card{
+    width: 100%;
+  }
+
+  .short-card-body{
+    top: 40%;
+  }
+}
+
+@media (max-width: 375px){
+  .short-card-body{
+    top: 30%;
+  }
+}
+
+@media (max-width: 320px){
+  .short-card-body{
+    top: 20%;
+  }
+}

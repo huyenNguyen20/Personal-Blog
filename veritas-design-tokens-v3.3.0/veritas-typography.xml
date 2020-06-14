@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="vds_heading_font_size_h1">32sp</dimen>
+  <dimen name="vds_heading_line_height_h1">48dp</dimen>
+  <dimen name="vds_heading_font_size_h2">24sp</dimen>
+  <dimen name="vds_heading_line_height_h2">32dp</dimen>
+  <dimen name="vds_heading_font_size_h3">20sp</dimen>
+  <dimen name="vds_heading_line_height_h3">28dp</dimen>
+  <dimen name="vds_heading_font_size_h4">18sp</dimen>
+  <dimen name="vds_heading_line_height_h4">24dp</dimen>
+  <dimen name="vds_heading_font_size_h5">16sp</dimen>
+  <dimen name="vds_heading_line_height_h5">24dp</dimen>
+  <dimen name="vds_heading_font_size_h6">14sp</dimen>
+  <dimen name="vds_heading_line_height_h6">20dp</dimen>
+  <dimen name="vds_subheading_font_size">12sp</dimen>
+  <dimen name="vds_subheading_line_height">20dp</dimen>
+  <dimen name="vds_text_font_size">16sp</dimen>
+  <dimen name="vds_text_line_height">24dp</dimen>
+  <dimen name="vds_text_font_size_sm">14sp</dimen>
+  <dimen name="vds_text_line_height_sm">20dp</dimen>
+  <dimen name="vds_text_font_size_xs">16sp</dimen>
+  <dimen name="vds_text_line_height_xs">20dp</dimen>
+</resources>

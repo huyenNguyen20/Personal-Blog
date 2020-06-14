@@ -1,0 +1,41 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("../normalize/normalize.css");
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-family: var(--vds-font-family-text);
+  overflow-x: hidden;
+}
+
+body{
+  font-size: var(--vds-text-font-size);
+}
+
+.row{
+  max-width: 70%;
+  margin: 0 auto;
+}
+section{
+  padding: 50px 0 50px 0;
+}
+
+/*Media Query*/
+@media (max-width: 1024px){
+  /*Settings*/
+  .row{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px){
+  /*Settings*/
+  .row{
+    max-width: 95%;
+  }
+}

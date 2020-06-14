@@ -1,0 +1,95 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("component/settings.css");
+@import url("component/navbar.css");
+@import url("component/heading.css");
+@import url("component/header.css");
+@import url("component/button.css");
+@import url("component/card.css");
+@import url("component/footer.css");
+
+/************Header*************/
+header{
+  background-image: var(--vds-gradient-cerulean-purple);
+  height: 40vh;
+}
+
+.main-title{
+  top: 30%;
+  left: 20%;
+  transform: translate(0,0);
+}
+
+h1{
+ color: var(--vds-color-cerulean-lightest);
+}
+
+/************Category*************/
+
+.category-content{
+  background-color: var(--vds-color-cerulean-lightest);
+  padding: var(--vds-spacing-inset-4x);
+}
+
+.category-content-display{
+  max-width: 60%;
+  margin-left: 20%;
+  margin-bottom: 50px;
+}
+
+.long-card{
+  max-width: 100%;
+
+}
+
+/*Media Query*/
+@media (max-width: 1024px){
+  .main-title{
+    left: 12%;
+  }
+
+  .category-content-display{
+    max-width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 768px){
+  .main-title{
+    left: 5%;
+  }
+
+  .category-content-display{
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 426px){
+  .main-title{
+    left: 10%;
+  }
+  /*Media Query for long-card of related posts section*/
+  .long-card{
+    flex-direction: column;
+  }
+
+  .long-card-img,
+  .long-card-body{
+    width: 100%;
+    height: 60%;
+  }
+
+  .card-preview{
+    display: none;
+  }
+}
+
+@media (max-width: 320px){
+  .main-title{
+    top: 25%;
+  }
+
+  .category-content{
+    padding: var(--vds-spacing-inset-1x);
+  }
+}

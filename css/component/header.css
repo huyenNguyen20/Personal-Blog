@@ -1,0 +1,33 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+}
+
+.love-icon{
+  color: red;
+}
+
+/*Media Query*/
+@media (max-width: 768px){
+  .main-title{
+    left: 20%;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 426px){
+  .main-title{
+    left: 10%;
+  }
+}

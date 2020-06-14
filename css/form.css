@@ -1,0 +1,37 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("component/settings.css");
+@import url("component/navbar.css");
+@import url("component/heading.css");
+@import url("component/header.css");
+@import url("component/button.css");
+@import url("component/footer.css");
+@import url("component/subscription.css");
+
+header{
+  background-image: var(--vds-gradient-cerulean-purple);
+  height: 40vh;
+}
+
+.main-title{
+  top: 20%;
+  left: 20%;
+  transform: translate(0,0);
+}
+
+h1{
+ color: var(--vds-color-cerulean-lightest);
+}
+
+/*Media Query*/
+@media (max-width: 480px){
+  .main-title{
+    top: 25%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 320px){
+  .main-title{
+    left: 5%;
+  }
+}

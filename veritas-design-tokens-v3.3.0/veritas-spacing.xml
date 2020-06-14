@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="vds_spacing_none">0dp</dimen>
+  <dimen name="vds_spacing_half">4dp</dimen>
+  <dimen name="vds_spacing_1x">8dp</dimen>
+  <dimen name="vds_spacing_2x">16dp</dimen>
+  <dimen name="vds_spacing_3x">24dp</dimen>
+  <dimen name="vds_spacing_4x">32dp</dimen>
+  <dimen name="vds_spacing_6x">48dp</dimen>
+</resources>

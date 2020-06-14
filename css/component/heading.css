@@ -1,0 +1,34 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+h1,
+h2,
+h3{
+  color: var(--vds-color-cerulean-darker);
+  font-weight: var(--vds-font-weight-light);
+}
+
+h1{
+  letter-spacing: 1px;
+  font-size: var(--vds-heading-font-size-h1);
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: var(--vds-heading-font-size-h2);
+  text-align: left;
+  margin-bottom: 10px;
+}
+h3{
+  margin: 10px 0 10px 0;
+}
+
+/*Media Query*/
+@media (max-width: 426px){
+  h1{
+    font-size: var(--vds-heading-font-size-h2);
+  }
+
+  h2{
+    font-size: var(--vds-heading-font-size-h3);
+  }
+
+}

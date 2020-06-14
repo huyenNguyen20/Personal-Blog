@@ -1,0 +1,126 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+
+.subscription{
+  background-color: var(--vds-color-blue-lightest);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form{
+  grid-column: 1/3;
+  max-width: 60%;
+  margin: -50px 20% 50px 20%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: var(--vds-box-shadow-1);
+}
+
+.form-input{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  padding: 10px;
+}
+
+.label{
+  grid-area: 1/1/1/3;
+}
+
+.answer{
+  grid-area: 1/3/1/6;
+  padding-left: 40px;
+}
+
+.answer label{
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+  display: block;
+  width: 90%;
+  font-family: var(--vds-font-family-text);
+  padding: 5px;
+  border: 1px solid #cdcdcd;
+  font-size: var(--vds-text-font-size);
+}
+
+*:focus{
+  outline: none;
+}
+
+.submit{
+  display: block;
+  grid-area: 1/2/1/5;
+  font-family: var(--vds-font-family-text);
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--vds-color-cerulean);
+  border: 1px solid var(--vds-color-cerulean-dark);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  margin-top: 20px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.submit:hover{
+  background-color: var(--vds-color-cerulean-dark);
+  box-shadow: 2px 2px 2px #c0c0c0;
+}
+
+@media(max-width: 1024px){
+  form{
+    max-width: 80%;
+    margin: -50px 10% 50px 10%;
+  }
+}
+
+@media(max-width: 768px){
+  form{
+    max-width: 90%;
+    margin: -50px 5% 50px 5%;
+  }
+
+  h1{
+    font-size: 200%;
+  }
+}
+
+@media(max-width: 426px){
+  form{
+    max-width: 100%;
+    margin: 0px 0 50px 0;
+  }
+
+  .form-input{
+    display: grid;
+    grid-template-areas:
+    "label label label label label"
+    "answer answer answer answer answer";
+  }
+
+  .label{
+    grid-area: label;
+  }
+
+  .answer{
+    grid-area: answer;
+    padding: 0px;
+    padding-top: 10px;
+  }
+
+  .submit{
+    grid-area: label;
+    margin-right: 30px;
+  }
+
+  .description{
+    width: 80%;
+    margin-left: 10%
+  }
+}

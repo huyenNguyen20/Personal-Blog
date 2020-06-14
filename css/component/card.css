@@ -1,0 +1,63 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+@import url("link.css");
+
+
+.long-card{
+  display: flex;
+  background-color: #fff;
+  margin-top: 30px;
+  box-shadow: var(--vds-box-shadow-1);
+}
+
+.long-card-img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.long-card-body{
+  width: 50%;
+  padding: var(--vds-spacing-inset-1x);
+}
+
+.card-preview{
+  line-height: var(--vds-text-line-height-xs);
+}
+
+.card-author{
+  margin-top: 20px;
+  font-size: var(--vds-text-font-size-xs);
+}
+
+.card-author-img{
+  display: inline-block;
+  float: left;
+  margin: -5px 10px 0 0;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--vds-border-radius-circle);
+}
+
+.short-card{
+  position: relative;
+  margin-top: 30px;
+}
+
+.short-card-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.short-card-body{
+  width: 85%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background-color: rgba(255,255,255, 0.7);
+  padding: var(--vds-spacing-inset-1x);
+  border-radius: var(--vds-border-radius-base);
+}

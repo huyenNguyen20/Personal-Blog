@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+  <title>Subscription Form</title>
+  <!--Favicon---->
+  <link rel="icon" sizes="16x16" href="../images/favicon-16x16.png">
+  <!--Stylesheet---->
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+  <header>
+    <div class="main-nav">
+      <div class="row">
+        <div class="nav-bar">
+          <nav>
+            <img class="logo" src="../images/Logo.png" alt="Huyen Blog Logo">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="#about-me">About Me</a></li>
+              <li><a class="nav-link" href="#">Subcribe</a></li>
+            </ul>
+          </nav>
+        </div>
+        <ion-icon class="nav-hamburger" name="reorder-four-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="main-title">
+      <h1>Subscription Form</h1>
+    </div>
+  </header>
+  <div class="subscription">
+    <form class="subcription-form" method="post">
+      <div class="form-input">
+        <div class="label">
+          <label class="name-label" for="name">Name</label>
+        </div>
+        <div class="answer">
+          <input class="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label">
+          <label class="email-label" for="email">Email</label>
+        </div>
+        <div class="answer">
+          <input class="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label">
+          <label class="number-label" for="number">How old are you?</label>
+        </div>
+        <div class="answer">
+          <input class="number" type="number" name="number" min="0" max="100" placeholder="Enter your age here" required>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label">
+          <label class="dropdown-label" for="dropdown">How did you know about the blog?</label>
+        </div>
+        <div class="answer">
+          <select class="dropdown" name="dropdown" class="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="search-engine">Search Engine</option>
+            <option value="friends">Friends</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label">Would you recommend the blog to your friend?</div>
+        <div class="answer">
+          <label>
+            <input type="radio" name="recommend" value="yes" checked>
+            Definitely</label>
+          <label>
+            <input type="radio" name="recommend" value="no">
+            Not Sure</label>
+          <label>
+            <input type="radio" name="recommend" value="may-be">
+            May be</label>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label" for="checkbox">Which category do you like to read the most?</div>
+        <div class="answer">
+          <label>
+            <input type="checkbox" name="read-most" value="philosophy">
+            Philosophy
+          </label>
+          <label>
+            <input type="checkbox" name="read-most" value="history">
+            History
+          </label>
+          <label>
+            <input type="checkbox" name="read-most" value="current-affairs">
+            Current Affairs
+          </label>
+          <label>
+            <input type="checkbox" name="read-most" value="movies">
+            Movies
+          </label>
+        </div>
+      </div>
+      <div class="form-input">
+        <div class="label">
+          <label class="text-area-label" for="textarea">Any Comments or Suggestions?</label>
+        </div>
+        <div class="answer">
+          <textarea class="textarea" name="textarea" rows="10" cols="10">Enter your text here
+              </textarea>
+        </div>
+      </div>
+      <div class="form-input">
+        <input class="submit" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <footer id="about-me">
+    <div class="row">
+      <div class="info">
+        <h3>About me</h3>
+        <p>
+          I love reading books, watching movies, and writing.
+          If I am asked to pick a plant representing myself, I would choose a bamboo.
+        </p>
+        <figure>
+          <img class="info-img" src="../images/bamboo.png" alt="bamboo icon" />
+          <figcaption>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></figcaption>
+        </figure>
+        <ul class="social-link">
+          <li><a class="twitter-icon" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a class="facebook-icon" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li><a class="instagram-icon" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+          <li><a class="linkedin-icon" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <h4>
+          <ion-icon name="home-outline"></ion-icon> Address
+        </h4>
+        <p>
+          123 Hokage Street, Leaf Village.
+        </p>
+        <h4>
+          <ion-icon name="briefcase-outline"></ion-icon> Job
+        </h4>
+        <p>
+          I am currently a Computer Science Student.
+        </p>
+        <h4>
+          <ion-icon name="call-outline"></ion-icon> Phone Number
+        </h4>
+        <p>
+          123-456-7890
+        </p>
+      </div>
+      <div class="category">
+        <h3>Explore</h3>
+        <ul class="category-link">
+          <li><a href="#">Current Affairs</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="category/philosophy.html">Philosophy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; Huyen Nguyen 2020. All rights are reserved.
+    </div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+
+</html>

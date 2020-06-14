@@ -1,0 +1,33 @@
+@import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+
+.btn{
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--vds-color-cerulean-lightest);
+  border: 1px solid var(--vds-color-cerulean);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.btn-full:link,
+.btn-full:visited{
+  margin-right: 20px;
+  background-color: #4cd3c2;
+  transition: background-color 0.2s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+  color: #0a97b0;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-full:hover{
+  background-color: var(--vds-color-cerulean-dark);
+}
+
+.btn-ghost:hover{
+  background-color: #0a97b0;
+  color: #fff;
+}
