@@ -1,13 +1,27 @@
+/*
+  Title: CSS file for Article Elment of Posts Pages
+  Description: The CSS files is used to style Article Element of Posts Page
+              + In particular, content class and its children, including
+              content-social-link, content-info, and content-related-posts.
+              + The file also includes media queries for the above items.
+
+*/
 @import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+/*Import link component to customize the style for Article Element*/
 @import url("link.css");
+/*Import card component to customize the style for Article Element*/
 @import url("card.css");
+
+/**************Social Link***************/
 
 .content {
   background-color: var(--vds-color-cerulean-lightest);
   display: grid;
   grid-template-columns: min-content 1fr;
 }
+
 /**************Social Link***************/
+
 .content-social-link{
   list-style: none;
   background-color: #fff;
@@ -53,7 +67,9 @@
   display: inline-block;
   margin-top: 3px;
 }
+
 /**************Content Info***************/
+
 .content-info{
   background-color: #fff;
   width: 70%;
@@ -63,8 +79,8 @@
   margin-bottom: 50px;
 }
 
-
 /*Content-author-icon*/
+
 .content-author-icon{
   padding: 20px;
 }
@@ -77,20 +93,60 @@
   float: left;
   margin: -10px 10px 0 0;
 }
+
 /*Content Heading*/
+
 .content-info h3{
-  font-weight: var(--vds-font-weight-semibold);
+  font-weight: bold;
 }
+
 .content-section-title{
   margin-top: 10px;
 }
+
+/*Content Images*/
+
+.content-img{
+  margin: 1.5rem 0;
+}
+
+.content-img img{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.content-img figcaption{
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
 /*Content Paragraph*/
+
 .content-info p{
   font-size: 1.25rem;
   line-height: var(--vds-text-line-height);
+  margin-bottom: 1.25rem;
+}
+
+.content-works-cited {
+  font-style: italic;
+}
+
+/*Content Blockquote*/
+
+.content-blockquote{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.content-blockquote cite{
+  display: block;
 }
 
 /*Content-author*/
+
 .content-author{
   display: flex;
   margin: 30px auto;
@@ -104,10 +160,6 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 50px;
-}
-
-.content-author-info p{
-  margin-bottom: 50px;
 }
 
 /**************Content Related Posts***************/
@@ -163,6 +215,10 @@
 
   .content-info{
     margin: -100px auto 50px auto;
+  }
+
+  .content-img img{
+    width: 100%;
   }
 
   .content-author{

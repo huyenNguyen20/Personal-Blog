@@ -1,3 +1,11 @@
+<!--
+  Title: Philosophy Category
+  Description: The Page is used to display all posts in Philosophy Category
+            +  It includes navigation bar, header, div , and footer.
+            +  The div element includes all posts in Philosophy Category and
+            links to them
+-->
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,6 +19,8 @@
 </head>
 
 <body>
+
+  <!-- Header -->
   <header>
     <div class="main-nav">
       <div class="row">
@@ -31,42 +41,98 @@
       <h1>Philosophy Category</h1>
     </div>
   </header>
+
+  <!-- Categoty Section includes all posts in the category -->
   <div class="category-content">
+
     <div class="category-content-display">
+
+      <!--Individual Post Card-->
       <div class="long-card">
+
         <img class="long-card-img" src="../../images/gandhi_back.jpg" alt="Mahatan Gandhi Picture">
+
         <div class="long-card-body">
-          <a class="tag-link" href="#">Philosophy</a>
-          <a class="tag-link" href="#">History</a>
+
+          <a role="button"
+            class="tag-link"
+            href="philosophy">
+            Philosophy
+          </a>
+
+          <a role="button"
+            class="tag-link"
+            href="history.html">
+            History
+          </a>
+
           <h3><a class="link" href="../posts/gandhi.html">An Imaginary Dialogue between Obama and Gandhi</a></h3>
+
           <p class="card-preview">
-          Odio non proin lorem. Taciti pharetra; odio rutrum. Commodo molestie, bibendum netus porta augue.
+          The essay aims to show the immorality of war and the practice of nonviolent resistance in the context of an imaginary dialogue.
           </p>
+
           <div class="card-author">
-            <img class="card-author-img" src="../../images/author.jpg" alt="Picture of the author">
+
+            <img aria-label="author-avatar"
+            class="card-author-img"
+            src="../../images/author.jpg"
+            alt="Picture of the author">
             Huyen Nguyen
+
           </div>
+
         </div>
+
       </div>
+
+      <!--Individual Post Card-->
       <div class="long-card">
+
         <img class="long-card-img" src="../../images/rashomon_back.png" alt="Rashomon Picture">
+
         <div class="long-card-body">
-          <a class="tag-link" href="#">Philosophy</a>
-          <a class="tag-link" href="#">Movie</a>
-          <h3><a class="link" href="#">Rashomon - A Philosophy Discourse</a></h3>
+
+          <a role="button"
+              class="tag-link"
+              href="philosophy.html">
+              Philosophy
+            </a>
+
+          <a role="button"
+              class="tag-link"
+              href="movie.html">
+              Movie
+           </a>
+
+          <h3><a class="link" href="../posts/rashomon.html">Rashomon - A Philosophical Discourse</a></h3>
+
           <p class="card-preview">
-          Odio non proin lorem. Taciti pharetra; odio rutrum. Commodo molestie, bibendum netus porta augue. Nibh conubia feugiat nascetur litora.
+          Rashomon enables the viewers to make a philosophical inquiry about the “true” criminal, about human nature, about one’s unconscious prejudice, especially against rape and woman.
           </p>
+
           <div class="card-author">
-            <img class="card-author-img" src="../../images/author.jpg" alt="Picture of the author">
+            <img aria-label="author-avatar"
+                class="card-author-img"
+                src="../../images/author.jpg"
+                alt="Picture of the author">
             Huyen Nguyen
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
+  <!--Footer-->
   <footer id="about-me">
+
     <div class="row">
+
+      <!--Personal Information-->
       <div class="info">
         <h3>About me</h3>
         <p>
@@ -78,20 +144,34 @@
           <figcaption>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></figcaption>
         </figure>
         <ul class="social-link">
-          <li><a class="twitter-icon" href="#">
+          <li><a role="button"
+              class="twitter-icon"
+              href="https://www.twitter.com/">
               <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li><a class="facebook-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                class="facebook-icon"
+                href="https://www.facebook.com/">
               <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li><a class="instagram-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                  class="instagram-icon"
+                  href="https://www.instagram.com/">
               <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-          <li><a class="linkedin-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                class="linkedin-icon"
+                href="https://www.linkedin.com/">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
+              </a>
+          </li>
         </ul>
       </div>
+
+      <!--Contact Information-->
       <div class="contact">
         <h3>Contact</h3>
         <h4>
@@ -113,23 +193,34 @@
           123-456-7890
         </p>
       </div>
+
+      <!--Content Category-->
       <div class="category">
         <h3>Explore</h3>
+
+        <!--Content Category Links-->
         <ul class="category-link">
-          <li><a href="#">Current Affairs</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Philosophy</a></li>
+          <li><a href="../category/current-affair.html">Current Affairs</a></li>
+          <li><a href="../category/history.html">History</a></li>
+          <li><a href="../category/movie.html">Movies</a></li>
+          <li><a href="../category/philosophy.html">Philosophy</a></li>
         </ul>
+
       </div>
+
     </div>
+    <!--Copyright Statement-->
     <div class="copyright">
       &copy; Huyen Nguyen 2020. All rights are reserved.
     </div>
+
   </footer>
+
+  <!-- Link to JavaScript File -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../../js/navbar.js"></script>
+
 </body>
 
 </html>

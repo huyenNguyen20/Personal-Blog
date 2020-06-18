@@ -1,16 +1,31 @@
+<!--
+  Title: Homepage for the Personal Blog Website
+  Description: The Page is used to display content of the website
+            +  It includes navigation bar, header, section, and footer.
+            +  The section includes multiple posts and links to the posts
+-->
 <!doctype html>
+
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Personal Blog</title>
   <!--Favicon---->
   <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+  <!--Font specific for Header in Homepage---->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <!--Stylesheet---->
   <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header>
+
+    <!-- Navigation Bar -->
     <div class="main-nav">
       <div class="row">
         <div class="nav-bar">
@@ -26,73 +41,181 @@
         <ion-icon class="nav-hamburger" name="reorder-four-outline"></ion-icon>
       </div>
     </div>
+
+    <!-- Title for the Header -->
     <div class="main-title">
-      <h1>I'm Fiona.<br>I <span class="love-icon">♥</span> books and movies.</h1>
-      <a class="btn btn-full" href="#about-me">Know me more</a>
+      <h1>I'm Fiona.<br>I <span class="love-icon"> ♥ </span> <span class="emphasize">books and movies</span>.</h1>
+
+      <!-- Button link to Personal Information in footer -->
+      <a role="button"
+        class="btn btn-full"
+        href="#about-me">
+        Know me more
+      </a>
+
+
+
+
     </div>
+
   </header>
+
+  <!-- Section to display multiple posts and links to them -->
   <section class="posts" id="posts">
+
     <div class="row">
+
       <h2>The lastest posts from Fiona</h2>
+
       <div class="posts-display">
+
         <div class="long-card">
           <img class="long-card-img" src="images/gandhi_back.jpg" alt="Mahatan Gandhi Picture">
+
           <div class="long-card-body">
-            <a class="tag-link" href="category/philosophy.html">Philosophy</a>
-            <a class="tag-link" href="#">History</a>
+
+            <a  role="button"
+                class="tag-link"
+                href="html/category/philosophy.html">
+                Philosophy
+            </a>
+
+            <a  role="button"
+                class="tag-link"
+                href="html/category/history.html">
+              History
+            </a>
+
             <h3><a class="link" href="html/posts/gandhi.html">An Imaginary Dialogue between Obama and Gandhi</a></h3>
+
             <p class="card-preview">
-            Odio non proin lorem. Taciti pharetra; odio rutrum. Commodo molestie, bibendum netus porta augue. Nibh conubia feugiat nascetur litora.
+            The essay aims to show the immorality of war and the practice of nonviolent resistance in the context of an imaginary dialogue.
             </p>
+
             <div class="card-author">
-              <img class="card-author-img" src="images/author.jpg" alt="Picture of the author">
+
+              <img aria-label="author avatar"
+                  class="card-author-img"
+                  src="images/author.jpg"
+                  alt="Picture of the author">
               Huyen Nguyen
+
             </div>
+
           </div>
+
         </div>
+
         <div class="short-card">
+
           <img class="short-card-img" src="images/rashomon_back.png" alt="Rashomon Picture">
+
           <div class="short-card-body">
-            <a class="tag-link" href="#">Philosophy</a>
-            <a class="tag-link" href="#">Movie</a>
-            <h3><a class="link" href="#">Rashomon - A Philosophy Discourse</a></h3>
+
+            <a role="button"
+                class="tag-link"
+                href="html/category/philosophy.html">
+                Philosophy
+            </a>
+
+            <a role="button"
+                class="tag-link"
+                href="html/category/movie.html">
+                Movie
+            </a>
+
+            <h3><a class="link" href="html/posts/rashomon.html">Rashomon - A Philosophical Discourse</a></h3>
+
             <div class="card-author">
-              <img class="card-author-img" src="images/author.jpg" alt="Picture of the author">
+
+              <img  aria-label="author avatar"
+                  class="card-author-img"
+                  src="images/author.jpg"
+                  alt="Picture of the author">
               Huyen Nguyen
+
             </div>
+
           </div>
+
         </div>
+
         <div class="short-card">
+
           <img class="short-card-img" src="images/in-this-world_back.png" alt="In This World Movie Picture">
+
           <div class="short-card-body">
-            <a class="tag-link" href="#">Current Affair</a>
-            <a class="tag-link" href="#">Movie</a>
-            <h3><a class="link" href="#">In This World - Refugees in Flesh and Bones</a></h3>
+
+            <a role="button"
+                class="tag-link"
+                href="html/category/current-affair.html">
+                Current Affair
+            </a>
+
+            <a role="button"
+                class="tag-link"
+                href="html/category/movie.html">
+              Movie
+            </a>
+
+            <h3><a class="link" href="html/posts/in-this-world.html">In This World - Refugees in Flesh and Bones</a></h3>
+
             <div class="card-author">
-              <img class="card-author-img" src="images/author.jpg" alt="Picture of the author">
+
+              <img aria-role="author avatar"
+                    class="card-author-img"
+                    src="images/author.jpg"
+                    alt="Picture of the author">
               Huyen Nguyen
+
             </div>
+
           </div>
+
         </div>
+
         <div class="long-card">
+
           <img class="long-card-img" src="images/syria_back.png" alt="Syria Hungry Children Picture">
+
           <div class="long-card-body">
-            <a class="tag-link" href="#">Current Affair</a>
-            <h3><a class="link" href="#">Syrian Hunger - A Humanitarian Crisis</a></h3>
+
+            <a role="button"
+              class="tag-link"
+              href="html/category/current-affair.html">
+              Current Affair
+            </a>
+
+            <h3><a class="link" href="html/posts/syria.html">Syrian Hunger - A Humanitarian Crisis</a></h3>
+
             <p class="card-preview">
-            Odio non proin lorem. Taciti pharetra; odio rutrum. Commodo molestie, bibendum netus porta augue. Nibh conubia feugiat nascetur litora.
+            Food insecurity in Syria is caused by the ongoing Civil War, exacerbated by 2017-18 drought, destroying the country’s economy and agricultural production, pushing millions of Syrian to poverty and hunger.
             </p>
+
             <div class="card-author">
-              <img class="card-author-img" src="images/author.jpg" alt="Picture of the author">
+              <img aria-role="author avatar"
+                  class="card-author-img"
+                  src="images/author.jpg"
+                  alt="Picture of the author">
               Huyen Nguyen
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+  <!--Footer-->
   <footer id="about-me">
+
     <div class="row">
+
+      <!--Personal Information-->
       <div class="info">
         <h3>About me</h3>
         <p>
@@ -100,49 +223,88 @@
           If I am asked to pick a plant representing myself, I would choose a bamboo.
         </p>
         <figure>
-          <img class="info-img"
-              src="../images/bamboo.png"
-              alt="bamboo icon" />
+          <img class="info-img" src="images/bamboo.png" alt="bamboo icon" />
           <figcaption>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></figcaption>
         </figure>
         <ul class="social-link">
-          <li><a class="twitter-icon" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-          <li><a class="facebook-icon" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a class="instagram-icon" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a class="linkedin-icon" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a role="button"
+              class="twitter-icon"
+              href="https://www.twitter.com/">
+              <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+          </li>
+          <li><a role="button"
+                class="facebook-icon"
+                href="https://www.facebook.com/">
+              <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+          </li>
+          <li><a role="button"
+                  class="instagram-icon"
+                  href="https://www.instagram.com/">
+              <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+          </li>
+          <li><a role="button"
+                class="linkedin-icon"
+                href="https://www.linkedin.com/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+          </li>
         </ul>
       </div>
+
+      <!--Contact Information-->
       <div class="contact">
         <h3>Contact</h3>
-        <h4><ion-icon name="home-outline"></ion-icon> Address</h4>
+        <h4>
+          <ion-icon name="home-outline"></ion-icon> Address
+        </h4>
         <p>
           123 Hokage Street, Leaf Village.
         </p>
-        <h4><ion-icon name="briefcase-outline"></ion-icon> Job</h4>
+        <h4>
+          <ion-icon name="briefcase-outline"></ion-icon> Job
+        </h4>
         <p>
           I am currently a Computer Science Student.
         </p>
-        <h4><ion-icon name="call-outline"></ion-icon> Phone Number</h4>
+        <h4>
+          <ion-icon name="call-outline"></ion-icon> Phone Number
+        </h4>
         <p>
           123-456-7890
         </p>
       </div>
+
+      <!--Content Category-->
       <div class="category">
         <h3>Explore</h3>
+
+        <!--Content Category Links-->
         <ul class="category-link">
-          <li><a href="#">Current Affairs</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Movies</a></li>
+          <li><a href="html/category/current-affair.html">Current Affairs</a></li>
+          <li><a href="html/category/history.html">History</a></li>
+          <li><a href="html/category/movie.html">Movies</a></li>
           <li><a href="html/category/philosophy.html">Philosophy</a></li>
         </ul>
+
       </div>
+
     </div>
+    <!--Copyright Statement-->
     <div class="copyright">
       &copy; Huyen Nguyen 2020. All rights are reserved.
     </div>
+
   </footer>
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/navbar.js"></script>
+
+  <!-- Link to JavaScript File -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/navbar.js"></script>
+
+
 </body>
+
 </html>

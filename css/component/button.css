@@ -1,5 +1,13 @@
+/*
+  Title: CSS file for Generic Button Element
+  Description: There are 2 types of generic buttons
+            + Ghost button
+            + Full button
+*/
+
 @import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
 
+/*General Styling for both types of button*/
 .btn{
   text-transform: capitalize;
   display: inline-block;
@@ -10,6 +18,7 @@
   border-radius: 1.5rem;
 }
 
+/*Specific Styling for full button*/
 .btn-full:link,
 .btn-full:visited{
   margin-right: 20px;
@@ -17,14 +26,15 @@
   transition: background-color 0.2s;
 }
 
+.btn-full:hover{
+  background-color: var(--vds-color-cerulean-dark);
+}
+
+/*Specific Styling for ghost button*/
 .btn-ghost:link,
 .btn-ghost:visited{
   color: #0a97b0;
   transition: background-color 0.2s, color 0.2s;
-}
-
-.btn-full:hover{
-  background-color: var(--vds-color-cerulean-dark);
 }
 
 .btn-ghost:hover{

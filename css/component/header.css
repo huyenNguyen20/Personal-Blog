@@ -1,7 +1,6 @@
 @import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
 
 header{
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,6 +17,11 @@ header{
   color: red;
 }
 
+.emphasize{
+  text-decoration: underline;
+  text-decoration-color: var(--vds-color-cerulean-light);
+  text-decoration-style: solid;
+}
 /*Media Query*/
 @media (max-width: 768px){
   .main-title{

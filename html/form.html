@@ -1,3 +1,8 @@
+<!--
+  Title: Subscription Form Page
+  Description: The Page is used to display subscription form
+            +  It includes navigation bar, header, form, and footer.
+-->
 <!doctype html>
 <html lang="en">
 
@@ -12,7 +17,11 @@
 </head>
 
 <body>
+
+  <!-- Header -->
   <header>
+
+    <!-- Navigation Bar -->
     <div class="main-nav">
       <div class="row">
         <div class="nav-bar">
@@ -28,12 +37,19 @@
         <ion-icon class="nav-hamburger" name="reorder-four-outline"></ion-icon>
       </div>
     </div>
+
+    <!-- Title of the Page -->
     <div class="main-title">
       <h1>Subscription Form</h1>
     </div>
+
   </header>
+
   <div class="subscription">
+
+    <!-- Subscription Form -->
     <form class="subcription-form" method="post">
+
       <div class="form-input">
         <div class="label">
           <label class="name-label" for="name">Name</label>
@@ -42,6 +58,7 @@
           <input class="name" type="text" name="name" placeholder="Enter your name" required>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label">
           <label class="email-label" for="email">Email</label>
@@ -50,6 +67,7 @@
           <input class="email" type="email" name="email" placeholder="Enter your email" required>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label">
           <label class="number-label" for="number">How old are you?</label>
@@ -58,6 +76,7 @@
           <input class="number" type="number" name="number" min="0" max="100" placeholder="Enter your age here" required>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label">
           <label class="dropdown-label" for="dropdown">How did you know about the blog?</label>
@@ -71,6 +90,7 @@
           </select>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label">Would you recommend the blog to your friend?</div>
         <div class="answer">
@@ -85,6 +105,7 @@
             May be</label>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label" for="checkbox">Which category do you like to read the most?</div>
         <div class="answer">
@@ -106,6 +127,7 @@
           </label>
         </div>
       </div>
+
       <div class="form-input">
         <div class="label">
           <label class="text-area-label" for="textarea">Any Comments or Suggestions?</label>
@@ -115,13 +137,21 @@
               </textarea>
         </div>
       </div>
+
       <div class="form-input">
         <input class="submit" type="submit" value="Submit">
       </div>
+
     </form>
+
   </div>
+
+  <!--Footer-->
   <footer id="about-me">
+
     <div class="row">
+
+      <!--Personal Information-->
       <div class="info">
         <h3>About me</h3>
         <p>
@@ -133,20 +163,34 @@
           <figcaption>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></figcaption>
         </figure>
         <ul class="social-link">
-          <li><a class="twitter-icon" href="#">
+          <li><a role="button"
+              class="twitter-icon"
+              href="#">
               <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li><a class="facebook-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                class="facebook-icon"
+                href="#">
               <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li><a class="instagram-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                  class="instagram-icon"
+                  href="#">
               <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-          <li><a class="linkedin-icon" href="#">
+              </a>
+          </li>
+          <li><a role="button"
+                class="linkedin-icon"
+                href="#">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
+              </a>
+          </li>
         </ul>
       </div>
+
+      <!--Contact Information-->
       <div class="contact">
         <h3>Contact</h3>
         <h4>
@@ -168,23 +212,34 @@
           123-456-7890
         </p>
       </div>
+
+      <!--Content Category-->
       <div class="category">
         <h3>Explore</h3>
+
+        <!--Content Category Links-->
         <ul class="category-link">
           <li><a href="#">Current Affairs</a></li>
           <li><a href="#">History</a></li>
           <li><a href="#">Movies</a></li>
-          <li><a href="category/philosophy.html">Philosophy</a></li>
+          <li><a href="../category/philosophy.html">Philosophy</a></li>
         </ul>
+
       </div>
+
     </div>
+    <!--Copyright Statement-->
     <div class="copyright">
       &copy; Huyen Nguyen 2020. All rights are reserved.
     </div>
+
   </footer>
+
+  <!-- Link to JavaScript File -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/navbar.js"></script>
+
 </body>
 
 </html>

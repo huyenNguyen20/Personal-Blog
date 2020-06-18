@@ -7,7 +7,8 @@
 @import url("component/footer.css");
 @import url("component/article_content.css");
 
+/*Customized the header height*/
 header{
-  background-image: url("../images/gandhi_back.jpg");
   height: 80vh;
+  background-position: top;
 }

@@ -9,8 +9,13 @@
 
 /**************Header**************/
 header{
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgb(249, 249, 250, 1), rgba(245, 252, 254, 0.3)),
                     url("../images/back.jpg");
+}
+
+.main-title{
+  font-family: 'Lato', sans-serif;
 }
 
 /**************Posts Section**************/

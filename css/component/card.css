@@ -1,7 +1,37 @@
+/*
+  Title: CSS file for Generic Card Component
+  Description: There are 2 types of card
+            + Long Card
+            + Short card
+              Notice: The long card and short card is adjusted to
+              screen width in specific stylesheet in different types
+              of HTML page.
+*/
+
 @import url("../veritas-design-tokens-v3.3.0/all.custom-properties.css");
+/*Import stylesheet for tag link and generic link from link.css file*/
 @import url("link.css");
 
+/*General styling*/
+.card-preview{
+  line-height: var(--vds-text-line-height-xs);
+}
 
+.card-author{
+  margin-top: 20px;
+  font-size: var(--vds-text-font-size-xs);
+}
+
+.card-author-img{
+  display: inline-block;
+  float: left;
+  margin: -5px 10px 0 0;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--vds-border-radius-circle);
+}
+
+/*General styling for long card*/
 .long-card{
   display: flex;
   background-color: #fff;
@@ -22,24 +52,7 @@
   padding: var(--vds-spacing-inset-1x);
 }
 
-.card-preview{
-  line-height: var(--vds-text-line-height-xs);
-}
-
-.card-author{
-  margin-top: 20px;
-  font-size: var(--vds-text-font-size-xs);
-}
-
-.card-author-img{
-  display: inline-block;
-  float: left;
-  margin: -5px 10px 0 0;
-  width: 30px;
-  height: 30px;
-  border-radius: var(--vds-border-radius-circle);
-}
-
+/*General styling for long card*/
 .short-card{
   position: relative;
   margin-top: 30px;
