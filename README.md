@@ -13,6 +13,10 @@ Before you begin, ensure you have met the following requirements:
 
 huyenNguyen20
 
+## Deployment
+
+Link to pages:  https://huyennguyen20.github.io/Personal-Blog/
+
 ## Built With
 
 * CSS
