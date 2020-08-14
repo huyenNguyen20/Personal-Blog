@@ -1,6 +1,4 @@
-# Project name
-
-Fiona's Personal Blog
+# Fiona's Personal Blog
 
 It is the first project for Udacity Front-end Nanodegree.
 
